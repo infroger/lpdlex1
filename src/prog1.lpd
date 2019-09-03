@@ -1,6 +1,6 @@
 programa teste;
-begin
+inicio
   var x: inteiro;
   x := 3;
   escreva(x);
-end.
+fim.

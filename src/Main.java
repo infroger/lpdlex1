@@ -14,9 +14,9 @@ public class Main {
 
 		Lexer l = new Lexer();
 		ArrayList<Token> tokens = l.lex(args[0]);
-		System.out.println(tokens.size());
+		System.out.println("Tokens: " +tokens.size());
 		
-		tokens.forEach (token -> {System.out.println(token.t +": " +token.c);} );
+		tokens.forEach (token -> {System.out.println(token.toString());} );
 	}
 
 }
