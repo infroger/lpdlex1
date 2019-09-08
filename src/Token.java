@@ -1,18 +1,18 @@
 
 public class Token {
-	Tipo t; //tipo
-	String c; //conteúdo
-	int l; //linha inicial
-	int col; //coluna inicial
+	Tipo tipo; //tipo
+	String conteudo; //conteúdo
+	int linha; //linha inicial
+	int coluna; //coluna inicial
 	
 	public Token(Tipo t, String c, int l, int col) {
-		this.t = t;
-		this.c = c;
-		this.l = l;
-		this.col = col;
+		this.tipo = t;
+		this.conteudo = c;
+		this.linha = l;
+		this.coluna = col;
 	}
 	
 	public String toString() {
-		return t +": " +c +"=> linha: " +l +", col: " +col;
+		return tipo +", " +conteudo +", " +linha +", " +coluna;
 	}
 }

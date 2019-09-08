@@ -12,8 +12,10 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		Lexer l = new Lexer();
-		ArrayList<Token> tokens = l.lex(args[0]);
+		//Lexer l = new Lexer();
+		Lexer l = new Lexer(args[0]);
+		//ArrayList<Token> tokens = l.lex(args[0]);
+		ArrayList<Token> tokens = l.lex();
 		System.out.println("Tokens: " +tokens.size());
 		
 		tokens.forEach (token -> {System.out.println(token.toString());} );
