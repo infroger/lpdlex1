@@ -67,7 +67,7 @@ public class PPR extends Parser {
 	}
 	
 	public boolean analisaEtapaDeclaracaoDeVariaveis() {
-		
+		return true;
 	}
 
 }
