@@ -8,7 +8,7 @@ import java.io.PushbackReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class LexerAntigo {
+public class Lexer1 {
 	
 	PushbackReader r; //Arquivo a ser parseado
 	int intch; //código do caracter sendo analisado

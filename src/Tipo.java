@@ -1,23 +1,23 @@
 
 public enum Tipo {
-	SPROGRAMA, 
-	SVAR, 
-	SDOISPONTOS, 
-	SINICIO, 
-	SFIM, 
-	SATRIBUICAO, 
-	STIPO,
-	SESCREVA, 
-	SINTEIRO,
-	SPONTO_E_VIRGULA, 
-	SPONTO,
-	SMAIS,
-	SMENOS,
-	SMULTIPLICACAO,
-	SDIVISAO,
-	SNUMERO,
-	SIDENTIFICADOR,
-	SABRE_PARENTESIS,
-	SFECHA_PARENTESIS,
-	SERRO
+	SPROGRAMA,				//program 
+	SVAR, 					//var
+	//SDOISPONTOS, 			//:
+	SINICIO, 				//inicio
+	SFIM, 					//fim
+	SATRIBUICAO, 			//:=
+	STIPO,					//:
+	SESCREVA, 				//escreva
+	SINTEIRO,				//inteiro
+	SPONTO_E_VIRGULA, 		//;
+	SPONTO,					//:
+	SMAIS,					//+
+	SMENOS,					//-
+	SMULTIPLICACAO,			//*
+	SDIVISAO,				///
+	SNUMERO,				//12345
+	SIDENTIFICADOR,			//abcdef
+	SABRE_PARENTESIS,		//(
+	SFECHA_PARENTESIS,		//)
+	SERRO					//erro
 }

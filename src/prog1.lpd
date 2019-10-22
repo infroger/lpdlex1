@@ -1,4 +1,4 @@
-programa teste;
+programa teste ;
 inicio
   var x: inteiro;
   x := 3;

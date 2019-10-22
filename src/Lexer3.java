@@ -7,15 +7,16 @@ import java.io.Reader;
 import java.io.PushbackReader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
-public class Lexer {
+public class Lexer3 {
 	
 	PushbackReader r; //Arquivo a ser parseado
 	int intch; //código do caracter sendo analisado
 	char ch; //caracter sendo analisado
 	int linha = 1;
 	int coluna = 0;
-	ArrayList<Token> ltoken = new ArrayList<Token>(); //Lista de tokens
+	HashMap<String, Token> ltoken = new HashMap<String, Token>(); //Lista de tokens
 	
 	/**
 	 * Inicia stream a partir do arquivo-fonte de entrada
@@ -23,7 +24,7 @@ public class Lexer {
 	 * @throws UnsupportedEncodingException
 	 * @throws FileNotFoundException
 	 */
-	public Lexer(String f) throws UnsupportedEncodingException, FileNotFoundException {
+	public Lexer3(String f) throws UnsupportedEncodingException, FileNotFoundException {
 	    //Pág. 62 da apostila
   	    //https://www.javamex.com/tutorials/io/character_stream_reader.shtml
 
@@ -166,14 +167,14 @@ public class Lexer {
 	 * @return
 	 * @throws IOException
 	 */
-	public ArrayList<Token> lex() throws IOException {
+	public HashMap<String, Token> lex() throws IOException {
 				
 	  Token t;
 		
 	  t = buscaToken();
 	  
 	  while ( t.tipo != Tipo.SERRO ) {
-		  ltoken.add(t);
+		  ltoken.put(t.conteudo, t);
 		  //System.out.println("Token: " +t.toString());
 	      t = buscaToken() ;
 	  }

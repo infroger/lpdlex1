@@ -7,13 +7,13 @@ import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class Main {
+public class Main1 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		//Lexer l = new Lexer();
-		Lexer l = new Lexer(args[0]);
+		//Lexer1 l = new Lexer1();
+		Lexer2 l = new Lexer2(args[0]);
 		//ArrayList<Token> tokens = l.lex(args[0]);
 		ArrayList<Token> tokens = l.lex();
 		System.out.println("Tokens: " +tokens.size());
